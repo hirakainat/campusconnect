@@ -1,0 +1,160 @@
+
+.campus-map {
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  margin-top: 20px;
+  overflow: hidden;
+  border: 3px solid #b8cbb6;
+  border-radius: 18px;
+  background: #eaf1e4;
+}
+
+.map-heading {
+  padding: 18px;
+  color: #173f31;
+}
+
+.map-heading h2 {
+  margin: 0;
+}
+
+.map-heading p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.map-entrance {
+  position: absolute;
+  bottom: 5px;
+  left: 38%;
+  width: 24%;
+  padding: 10px;
+  background: #173f31;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.map-road {
+  position: absolute;
+  background: #c8ccc6;
+  border: 2px solid white;
+}
+
+.horizontal-road {
+  top: 46%;
+  left: 0;
+  width: 100%;
+  height: 55px;
+}
+
+.vertical-road {
+  left: 53%;
+  top: 10%;
+  width: 45px;
+  height: 78%;
+}
+
+.map-parking {
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  padding: 12px;
+  background: #d2d2d2;
+  border: 2px solid white;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.map-blocks {
+  position: absolute;
+  inset: 0;
+}
+
+.map-block {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 19%;
+  min-height: 85px;
+  background: #d5e2ed;
+  border: 2px solid #58748c;
+  border-radius: 10px;
+  color: #183b50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 4;
+  box-shadow: 0 4px 9px #0002;
+}
+
+.map-block strong {
+  font-size: 15px;
+}
+
+.map-block span {
+  font-size: 10px;
+}
+
+.map-block:not(:disabled):hover {
+  background: #b9d7c0;
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.map-block:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.map-facilities {
+  position: absolute;
+  bottom: 55px;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.map-facilities span {
+  padding: 7px 10px;
+  background: #f4e7c7;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.map-disclaimer {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 9px;
+  color: #526052;
+}
+
+@media (max-width: 600px) {
+  .campus-map {
+    min-height: 550px;
+  }
+
+  .map-block {
+    width: 25%;
+    min-height: 65px;
+  }
+
+  .map-block strong {
+    font-size: 11px;
+  }
+
+  .map-block span {
+    font-size: 8px;
+  }
+}
