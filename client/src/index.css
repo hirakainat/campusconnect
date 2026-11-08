@@ -1,0 +1,126 @@
+/* basic */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f5f4;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f4c45;
+  color: white;
+  padding: 12px 24px;
+}
+
+.links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* buttons */
+button {
+  background: #0f4c45;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+button.danger {
+  background: red;
+}
+
+/* inputs */
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* cards and forms */
+.card {
+  background: white;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 450px;
+}
+
+.error {
+  color: red;
+}
+
+/* campus map */
+.map {
+  position: relative;
+  height: 420px;
+  background: #cfe8d5;
+  border: 2px solid #8fb89b;
+  border-radius: 10px;
+}
+
+.pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: #c4551d;
+}
+
+/* room / issue status */
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: white;
+  background: gray;
+}
+
+.badge.available, .badge.resolved {
+  background: green;
+}
+
+.badge.occupied, .badge.pending {
+  background: red;
+}
+
+.badge.in-progress {
+  background: orange;
+}
+
+/* admin tabs */
+.tabs button {
+  background: #ccc;
+  color: black;
+  margin: 0 6px 6px 0;
+}
+
+.tabs button.active {
+  background: #0f4c45;
+  color: white;
+}
